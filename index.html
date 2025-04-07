@@ -84,7 +84,7 @@
             let riskPerShare = stopLossValue - stockPrice;
             let quantity = Math.floor(riskAmount / riskPerShare);
             let target1 = stockPrice - riskPerShare; // 1:1 Risk-Reward
-            let target2 = stockPrice - (riskPerShare * 2); // 1:2 Risk-Reward
+            let target2 = stockPrice - (riskPerShare * 1.5); // 1:1.5 Risk-Reward
             
             document.getElementById("result").innerHTML =
                 `<p>Stop Loss: <strong>${stopLossValue.toFixed(2)}</strong></p>
