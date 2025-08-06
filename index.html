@@ -86,13 +86,15 @@
             let target1 = stockPrice - riskPerShare; // 1:1 Risk-Reward
             let target2 = stockPrice - (riskPerShare * 1.5); // 1:1.5 Risk-Reward
             let target3 = stockPrice - (riskPerShare * 2); // 1:2 Risk-Reward
+            let target4 = stockPrice - (riskPerShare * 3); // 1:3 Risk-Reward
             
             document.getElementById("result").innerHTML =
                 `<p>Stop Loss: <strong>${stopLossValue.toFixed(2)}</strong></p>
                 <p>Quantity: <strong>${quantity}</strong></p>
                 <p>Target 1(1:1RR): <strong>${target1.toFixed(2)}</strong></p>
                 <p>Target 2(1:1.5RR): <strong>${target2.toFixed(2)}</strong></p>
-                <p>Target 3(1:2RR): <strong>${target3.toFixed(2)}</strong></p>`;
+                <p>Target 3(1:2RR): <strong>${target3.toFixed(2)}</strong></p>
+                <p>Target 4(1:3RR): <strong>${target4.toFixed(2)}</strong></p>`;
         }
     </script>
 </body>
